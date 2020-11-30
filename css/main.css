@@ -1,0 +1,46 @@
+/*
+* {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+li {
+    height: calc(23vw - 10px);
+    width: calc(23vw - 10px);
+    background: green;
+    list-style: none;
+    margin: 10px 0 0 10px;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+ul {
+    display: grid;
+    width: 100%;
+    flex-wrap: wrap;
+    grid-template: "a a a a";
+    width: calc(100vw - 20px);
+    height: calc((100vw * 3)/4 - 20px);
+    gap: 10px;
+    margin: 10px;
+}
+
+li {
+    background: green;
+    list-style: none;
+}
+
+li:nth-child(n + 13) {
+    display: none;
+}
