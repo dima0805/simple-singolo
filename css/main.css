@@ -85,6 +85,10 @@
     letter-spacing: -0.035em;
 }
 
+li:not(.active):hover {
+    color: red;
+}
+
 .navigation_item:last-child {
     margin-right: 0;
   }
