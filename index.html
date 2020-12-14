@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/fonts.css">
     <title>Singolo</title>
   </head>
 
   <body>
       <header class="header">
-        <div class="wrapper">
+        <div class="wrapper header_wrapper">
           <div class="header_content">
             <div class="logo">
               <h1>SINGOLO<span>*</span></h1>
@@ -17,70 +18,131 @@
             <nav class="header_navigation">
               <ul class="navigation" id="menu"  >
                 <li class="navigation_item"><a class="active" href="#home">Home</a></li>
-                <li class="navigation_item"><a href="#service">Service</a></li>
+                <li class="navigation_item"><a href="#service">Services</a></li>
                 <li class="navigation_item"><a href="#portfolio">Portfolio</a></li>
                 <li class="navigation_item"><a href="#about">About</a></li>
                 <li class="navigation_item"><a href="#contact">Contact</a></li>
               </ul>
             </nav>
-          </div>
-        </div>
+          </div> 
+         </div>
       </header>
-      <main>
-        <section id="wrapper">
-          <div id="home"></div>
-
-          <div id="service"></div>
-
-          <div id="portfolio">
-            <ul class="portfolio">
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-              <li>
-                <div></div>
-              </li>
-            </ul>
-          </div>
-
-          <div id="about"></div>
-
-          <div id="contact"></div>
-        </section>
       
+      <main class="main-content">
+        <section class="slider" id="wrapper">
+          <div class="wrapper" id="home">
+            <div class="slider_content">
+              <span class="slider_button button_left"></span>
+              <div class="slider_item">
+                  <figure class="phone_vertical"><img src="img/Sliders/phone_vertical.png" alt="">
+                      <img src="img/Sliders/phone_button.png" alt="" class="phone_button">
+                      <div class="screen-off"></div>
+                  </figure>
+                  <figure class="phone_horizontal"><img src="img/Sliders/phone_horizontal.png" alt="">
+                      <img src="img/Sliders/phone_button.png" alt="" class="phone_button">
+                      <div class="screen-off"></div>
+                  </figure>
+              </div>
+              <div class="slider_item slider-modify" style="display: none;">
+                  <figure class="phone_vertical"><img src="img/Sliders/screen2.png" alt="">
+                  </figure>
+              </div>
+              <span class="slider_button button_right"></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="service">
+          <div class="wrapper" id="service">
+             <div class="service_content">
+              <h2>Our Services</h2>
+              <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
+              luctus, nisierat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                        tortor mauris condimentum nibh.</p>
+               <div class="service_list">
+                    <div class="service-list_item">
+                      <div class="service_logo"><img src="img\icons\icon-pen.png" class="icon-border"></div>
+                        <h3>Custom Design</h3>
+                        <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra
+                        lacus ut, ultrices velit.</p>
+                    </div>
+                    <div class="service-list_item">
+                       <div class="service_logo"><img src="img\icons\icon-bulb.png"></div>
+                         <h3>Inovative Ideas</h3>
+                         <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus
+                          dolor id lorem.</p>
+                    </div>
+                    <div class="service-list_item">
+                        <div class="service_logo"><img src="img\icons\icon-heart.png" class="icon-border"></div>
+                         <h3>Love Is The Answer</h3>
+                         <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                         Quisque condimentum.</p>
+                    </div>
+                    <div class="service-list_item">
+                         <div class="service_logo"><img src="img\icons\icon-phone.png" class="icon-border"></div>
+                         <h3>Responsive Layout</h3>
+                         <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc
+                         ligula. Prae&shy;sent elit leo.</p>
+                    </div>
+                    <div class="service-list_item">
+                         <div class="service_logo"><img src="img\icons\icon-bubble.png" class="icon-border"></div>
+                         <h3>24 / 7 Support</h3>
+                         <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+                          Pellen&shy; tesque egestas venenatis lorem.</p>
+                    </div>
+                    <div class="service-list_item">
+                         <div class="service_logo"><img src="img\icons\icon-star.png" class="icon-border"></div>
+                         <h3>Feel Like A Star</h3>
+                         <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+                          tellus.</p>
+                    </div>
+                </div>        
+            </div>
+          </div>
+        </section>
+          
+        <section class="portfolio">
+          <div class="wrapper" id="portfolio">
+            <div class="portfolio_content">
+              <h2 class="portfolio_title">Portfolio</h2>
+                <p class="portfolio_description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                   eget lacinia odio sem nec elit.</p>
+                   <div class="portfolio_tags">
+                    <button class="button tag_all">All</button>
+                    <button class="button tag_wb">Web Design</button>
+                    <button class="button tag_gd">Graphic Design</button>
+                    <button class="button tag_art">Artwork</button>
+                   </div>
+                    <div class="portfolio_works">
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-1.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-2.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-3.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-4.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-5.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-6.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-7.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-8.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-9.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-10.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-11.png" alt=""></div>
+                      <div class="portfolio-works_item"><img src="img\portfolio\portfolio-12.png" alt=""></div>
+                  </div>
+            </div>
+          </div>     
       </main>
-      <footer></footer>
-    </div>
-    <script src="js/script.js"></script>
+      <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_content">
+                <span class="copyright">© Copyright 2013</span>
+                <ul class="footer_buttons">
+                    <li class="social-buttons_item icon-fb"><a href="#"></a></li>
+                    <li class="social-buttons_item icon-google"><a href="#"></a></li>
+                    <li class="social-buttons_item icon-twitter"><a href="#"></a></li>
+                    <li class="social-buttons_item icon-linkedin"><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+   <script src="js/script.js"></script>
   </body>
 </html>
