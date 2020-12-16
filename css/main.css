@@ -3,10 +3,10 @@
   padding: 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -299,7 +299,7 @@ li:not(.active):hover {
   display: none;
 }
 
-/*portfolio*/
+/*Portfolio*/
 
 .portfolio {
   background-color: #2d303a;
@@ -384,7 +384,7 @@ li:not(.active):hover {
   display: none;
 }
 
-/*FOOTER*/
+/*Footer*/
 
 .footer {
   background-color: #2d303a;
