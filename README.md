@@ -1,1 +1,1 @@
-# simple-singolo
+https://dima0805.github.io/simple-singolo/
