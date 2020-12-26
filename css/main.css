@@ -35,11 +35,15 @@ ul {
   border-bottom: 6px solid #323746;
 }
 
-.header_burger {
-  display: none;
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 29px 40px 30px 40px;
 }
 
-.logo h1 {
+
+.logo_content h1 {
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -48,15 +52,8 @@ ul {
   cursor: pointer;
 }
 
-.logo span {
+.logo_content span {
   color: #e56e6a;
-}
-
-.header_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 29px 40px 30px 40px;
 }
 
 .navigation {
@@ -84,10 +81,6 @@ ul {
   color: #f06c64;
   text-transform: uppercase;
   letter-spacing: 0.035rem;
-}
-
-li:not(.active):hover {
-  color: red;
 }
 
 .navigation_item:last-child {
@@ -146,7 +139,8 @@ li:not(.active):hover {
 
 .slider_item {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
 }
 
@@ -156,17 +150,17 @@ li:not(.active):hover {
 }
 
 .slider-resize {
-  padding: 54px 40px 31px 40px;
+  padding: 40px 40px 31px 40px;
 }
 
 .phone_vertical {
   position: relative;
-  margin-right: 74px;
-}
+  }
 
 .phone_horizontal {
   position: relative;
   align-self: center;
+  margin-left: 74px;
 }
 
 .phone_vertical .phone_button {
@@ -470,7 +464,94 @@ li:not(.active):hover {
   margin-right: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1019px) {
+ 
+
+  .service_list {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-areas:
+      "a a"
+      "a a"
+      "a a";
+    gap: 20px;
+  }
+
+  .slider_content {
+    padding: 41px 29px 43px 29px;
+  }
+
+  .slider_item {
+  
+   width: 600px;
+   height: 364px;
+  }
+
+  .phone_horizontal {
+    margin-left: 53px;
+  }
+  
+  .vertical {
+   height: 364px;
+   width: 181px;
+ }
+
+ .horizontal{
+   height: 181px;
+   width: 364px;
+ }
+
+  .slider-resize {
+   padding: 30.37px 29px 23.4px 40px;
+ }
+
+  .button_left {
+   height: 28px;
+ }
+ 
+ .button_right {
+   height: 28px;
+ }
+
+ .phone_vertical .phone_button {
+  top: 307.5px;
+  left: 65.5px;
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.phone_vertical .screen-off {
+  top: 48px;
+  left: 9px;
+  width: 144px;
+  height: 253px;
+}
+
+.phone_horizontal .phone_button {
+  top: 65px;
+  left: 6.29px;
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.phone_horizontal .screen-off {
+  top: 8.64px;
+  left: 42.83px;
+  width: 254px;
+  height: 145px;
+}
+
+ .screen2 {
+   height: 364px;
+   width: 367px;
+ }
+
+
+
+}
+
+@media screen and (max-width: 767px) {
   .portfolio_works {
     display: grid;
     flex-wrap: wrap;
@@ -486,14 +567,129 @@ li:not(.active):hover {
     display: grid;
     flex-wrap: wrap;
     grid-template-areas:
-      "a a"
-      "a a"
-      "a a";
-    gap: 20px;
+      "a"
+      "a"
+      "a"
+      "a"
+      "a"
+      "a";
   }
+
+  .service-list_item {
+    max-width: 100%;
+  }
+
+  .slider_content {
+     padding: 20px 10px 20px 10px;
+   }
+
+   .slider_item {
+    justify-content: center;
+    width: 375px;
+    height: 218px;
+   }
+
+   .phone_horizontal {
+    margin-left: 26px;
+  }
+   
+   .vertical {
+    height: 168px;
+    width: 80px;
+  }
+
+  .horizontal{
+    height: 80px;
+    width: 168px;
+  }
+
+   .slider-resize {
+    padding: 30.37px 29px 23.4px 40px;
+  }
+
+   .button_left {
+    height: 25px;
+    width: 14px;
+  }
+  
+  .button_right {
+    height: 25px;
+    width: 14px;
+  }
+
+  .phone_vertical .phone_button {
+    top: 141.5px;
+    left: 28.5px;
+    width: 15.4px;
+    height: 15.4px;
+  }
+  
+  .phone_vertical .screen-off {
+       top: 22px;
+    left: 4px;
+    width: 63.5px;
+    height: 117px;
+  }
+  
+  .phone_horizontal .phone_button {
+    top: 28px;
+    left: 2.29px;
+    width: 15.4px;
+    height: 15.4px;
+  }
+  
+  .phone_horizontal .screen-off {
+    top: 3.64px;
+    left: 19.83px;
+    width: 118px;
+    height: 63.5px;
+  }
+
+  .screen2 {
+    height: 253px;
+    width: 255px;
+  }
+
 }
 
 @media screen and (max-width: 376px) {
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 29px 20px 30px 20px;
+  }
+  
+  .navigation {
+    display: none;
+  }
+
+  .slider_content {
+    padding: 20px 10px 21px 10px;
+  }
+
+  .slider_item {
+   justify-content: center;
+   max-width: 280px;
+   height: 218px;
+  }
+
+  .button_left {
+    height: 26px;
+    width: 15px;
+  }
+  
+  .button_right {
+    height: 26px;
+    width: 15px;
+  }
+
+  .screen2 {
+    height: 227px;
+    width: 230px;
+  }
+
+
   .portfolio_works {
     display: grid;
     flex-wrap: wrap;
@@ -505,18 +701,7 @@ li:not(.active):hover {
     gap: 20px;
   }
 
-  .service_list {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-areas:
-      "a"
-      "a"
-      "a"
-      "a"
-      "a"
-      "a";
-  }
-  .copyright {
+    .copyright {
     font-size: 1.2rem;
     color: #767e9e;
     display: none;

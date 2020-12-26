@@ -1,5 +1,4 @@
 const MENU = document.querySelector(".navigation");
-
 const SLIDES = document.querySelectorAll(".slider_item");
 let SLIDE_NUM = 0;
 const SLIDER_WRAP = document.querySelector(".slider");
@@ -54,7 +53,7 @@ BUTTON_LEFT.addEventListener("click", (event) => {
 });
 
 BUTTON_RIGHT.addEventListener("click", (event) => {
-console.log(event)
+  console.log(event);
   SLIDES.forEach((el) => {
     el.style.display = "none";
     SLIDER_WRAP.classList.remove("bg-blue");
