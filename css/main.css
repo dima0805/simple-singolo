@@ -256,19 +256,12 @@ ul {
   overflow: hidden;
 }
 
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .service-list_item {
   position: relative;
   max-width: 220px;
   max-height: 93px;
   margin-bottom: 30px;
   padding-left: 79px;
-  overflow: hidden;
 }
 
 .service-list_item h3 {
@@ -295,8 +288,9 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
-  height: 55px;
+  flex-wrap: wrap;
+  width: 60px;
+  height: 60px;
   border: 2px solid #666d89;
   border-radius: 50%;
 }
@@ -487,7 +481,6 @@ ul {
 @media screen and (max-width: 1019px) {
   .service_list {
     display: grid;
-    flex-wrap: wrap;
     justify-content: center;
     grid-template-areas:
       "a a"
@@ -567,19 +560,14 @@ ul {
 
 @media screen and (max-width: 767px) {
   .portfolio_works {
-    display: grid;
-    flex-wrap: wrap;
     grid-template-areas:
       "a a a"
       "a a a"
       "a a a"
       "a a a";
-    gap: 20px;
   }
 
   .service_list {
-    display: grid;
-    flex-wrap: wrap;
     grid-template-areas:
       "a"
       "a"
@@ -587,6 +575,7 @@ ul {
       "a"
       "a"
       "a";
+    grid-template-columns: auto;
   }
 
   .service-list_item {
@@ -824,14 +813,11 @@ ul {
   }
 
   .portfolio_works {
-    display: grid;
-    flex-wrap: wrap;
     grid-template-areas:
       "a a"
       "a a"
       "a a"
       "a a";
-    gap: 20px;
   }
 
   .copyright {
