@@ -12,20 +12,46 @@
       <header class="header">
         <div class="wrapper">
           <div class="header_content">
+
+
+            <div  class="header__burger-menu">
+              <div id="burger" class="header__burger-button">
+                  <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.2C0 0.537259 0.537259 0 1.2 0H23.8C24.4627 0 25 0.537259 25 1.2C25 1.86274 24.4627 2.4 23.8 2.4H1.2C0.537259 2.4 0 1.86274 0 1.2ZM0 10C0 9.33726 0.537259 8.8 1.2 8.8H23.8C24.4627 8.8 25 9.33726 25 10C25 10.6627 24.4627 11.2 23.8 11.2H1.2C0.537259 11.2 0 10.6627 0 10ZM1.2 17.6C0.53726 17.6 0 18.1373 0 18.8C0 19.4627 0.537259 20 1.2 20H23.8C24.4627 20 25 19.4627 25 18.8C25 18.1373 24.4627 17.6 23.8 17.6H1.2Z" fill="white"/>
+                  </svg>
+              </div>
+              <div id="mobile-menu" class="header__mobile-menu header__mobile-menu_hidden mobile-menu ">
+                  <nav class="mobile-menu__navigation mobile-menu__navigation_hidden">
+                      <h1 class="header__logo_mobile header__logo">SINGOLO<span class="header__accent">*</span></h1>
+                      <ul class="navigation__list-mobile">
+                          <li class="navigation__item-mobile"><a class="link-mobile navigation__link-mobile  navigation__link-mobile_state_active link_home " href="#">home</a></li>
+                          <li class="navigation__item-mobile"><a class="link-mobile navigation__link-mobile  link_services" href="#services">services</a></li>
+                          <li class="navigation__item-mobile"><a class="link-mobile navigation__link-mobile  link_portfolio" href="#portfolio">portfolio</a></li>
+                          <li class="navigation__item-mobile"><a class="link-mobile navigation__link-mobile  link_about" href="#about">about</a></li>
+                          <li class="navigation__item-mobile"><a class="link-mobile navigation__link-mobile link_contact" href="#contact">contact</a></li>
+                      </ul>
+                  </nav>
+                  <div class="mobile-menu_cover"></div>
+              </div>
+            </div>
+
+
             <div class="logo_content">
               <h1>SINGOLO<span>*</span></h1>
             </div>
             <nav class="header_navigation">
-              <ul class="navigation" id="menu"  >
+              <ul class="navigation" id="menu">
                 <li class="navigation_item"><a class="active" href="#home">Home</a></li>
-                <li class="navigation_item"><a href="#service">Services</a></li>
+                <li class="navigation_item"><a href="#services">Services</a></li>
                 <li class="navigation_item"><a href="#portfolio">Portfolio</a></li>
                 <li class="navigation_item"><a href="#about">About</a></li>
                 <li class="navigation_item"><a href="#contact">Contact</a></li>
               </ul>
             </nav>
+
+
           </div> 
-         </div>
+        </div>
       </header>
       
       <main>
@@ -53,7 +79,7 @@
         </section>
 
         <section class="service">
-          <div class="wrapper" id="service">
+          <div class="wrapper" id="services">
              <div class="service_content">
               <h2>Our Services</h2>
               <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo

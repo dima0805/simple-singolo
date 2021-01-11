@@ -42,6 +42,26 @@ ul {
   padding: 29px 40px 30px 40px;
 }
 
+.header__burger-menu {
+  display: none;
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
+.header__mobile-menu_hidden {
+  display: none;
+}
+
+.mobile-menu_cover {
+  display: none;
+}
+
+.header__accent {
+  margin: 0;
+  color: #f06c64;
+}
 
 .logo_content h1 {
   font-size: 2.5rem;
@@ -155,7 +175,7 @@ ul {
 
 .phone_vertical {
   position: relative;
-  }
+}
 
 .phone_horizontal {
   position: relative;
@@ -322,12 +342,12 @@ ul {
 }
 
 .portfolio_tags {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18px;
-  width: 290px;
-  height: 22px;
+  max-width: 290px;
 }
 
 .button {
@@ -465,8 +485,6 @@ ul {
 }
 
 @media screen and (max-width: 1019px) {
- 
-
   .service_list {
     display: grid;
     flex-wrap: wrap;
@@ -483,72 +501,68 @@ ul {
   }
 
   .slider_item {
-  
-   width: 600px;
-   height: 364px;
+    width: 600px;
+    height: 364px;
   }
 
   .phone_horizontal {
     margin-left: 53px;
   }
-  
-  .vertical {
-   height: 364px;
-   width: 181px;
- }
 
- .horizontal{
-   height: 181px;
-   width: 364px;
- }
+  .vertical {
+    height: 364px;
+    width: 181px;
+  }
+
+  .horizontal {
+    height: 181px;
+    width: 364px;
+  }
 
   .slider-resize {
-   padding: 30.37px 29px 23.4px 40px;
- }
+    padding: 30.37px 29px 23.4px 40px;
+  }
 
   .button_left {
-   height: 28px;
- }
- 
- .button_right {
-   height: 28px;
- }
+    height: 28px;
+  }
 
- .phone_vertical .phone_button {
-  top: 307.5px;
-  left: 65.5px;
-  width: 31.5px;
-  height: 31.5px;
-}
+  .button_right {
+    height: 28px;
+  }
 
-.phone_vertical .screen-off {
-  top: 48px;
-  left: 9px;
-  width: 144px;
-  height: 253px;
-}
+  .phone_vertical .phone_button {
+    top: 307.5px;
+    left: 65.5px;
+    width: 31.5px;
+    height: 31.5px;
+  }
 
-.phone_horizontal .phone_button {
-  top: 65px;
-  left: 6.29px;
-  width: 31.5px;
-  height: 31.5px;
-}
+  .phone_vertical .screen-off {
+    top: 48px;
+    left: 9px;
+    width: 144px;
+    height: 253px;
+  }
 
-.phone_horizontal .screen-off {
-  top: 8.64px;
-  left: 42.83px;
-  width: 254px;
-  height: 145px;
-}
+  .phone_horizontal .phone_button {
+    top: 65px;
+    left: 6.29px;
+    width: 31.5px;
+    height: 31.5px;
+  }
 
- .screen2 {
-   height: 364px;
-   width: 367px;
- }
+  .phone_horizontal .screen-off {
+    top: 8.64px;
+    left: 42.83px;
+    width: 254px;
+    height: 145px;
+  }
 
-
-
+  .screen2 {
+    height: 364px;
+    width: 367px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -580,38 +594,38 @@ ul {
   }
 
   .slider_content {
-     padding: 20px 10px 20px 10px;
-   }
+    padding: 20px 10px 20px 10px;
+  }
 
-   .slider_item {
+  .slider_item {
     justify-content: center;
     width: 375px;
     height: 218px;
-   }
+  }
 
-   .phone_horizontal {
+  .phone_horizontal {
     margin-left: 26px;
   }
-   
-   .vertical {
+
+  .vertical {
     height: 168px;
     width: 80px;
   }
 
-  .horizontal{
+  .horizontal {
     height: 80px;
     width: 168px;
   }
 
-   .slider-resize {
+  .slider-resize {
     padding: 30.37px 29px 23.4px 40px;
   }
 
-   .button_left {
+  .button_left {
     height: 25px;
     width: 14px;
   }
-  
+
   .button_right {
     height: 25px;
     width: 14px;
@@ -623,21 +637,21 @@ ul {
     width: 15.4px;
     height: 15.4px;
   }
-  
+
   .phone_vertical .screen-off {
-       top: 22px;
+    top: 22px;
     left: 4px;
     width: 63.5px;
     height: 117px;
   }
-  
+
   .phone_horizontal .phone_button {
     top: 28px;
     left: 2.29px;
     width: 15.4px;
     height: 15.4px;
   }
-  
+
   .phone_horizontal .screen-off {
     top: 3.64px;
     left: 19.83px;
@@ -650,6 +664,130 @@ ul {
     width: 255px;
   }
 
+  .header_navigation {
+    display: none;
+  }
+
+  .logo_content {
+    margin: 0 auto;
+    z-index: -2;
+  }
+
+  .header__burger-menu {
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 20px;
+  }
+
+  .header__burger-button {
+    display: block;
+    z-index: 3;
+  }
+
+  .header__burger-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .header__burger-button_active {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+  }
+
+  .header__logo {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: -2;
+  }
+
+  .header__logo_mobile {
+    padding: 25px 0 0 71px;
+    font-size: 2rem;
+  }
+
+  .navigation__list-mobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 50%;
+    padding: 0 0 0 71px;
+    list-style-type: none;
+    letter-spacing: -0.035em;
+  }
+
+  .navigation__item-mobile {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #f06c64;
+    text-transform: uppercase;
+    letter-spacing: 0.035rem;
+  }
+
+  .link-mobile {
+    color: #ffffff;
+  }
+
+  .navigation__link-mobile {
+    display: flex;
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .navigation__link-mobile_state_active {
+    color: #f06c64;
+  }
+
+  .header__mobile-menu {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0008;
+  }
+
+  .header__mobile-menu_hidden {
+    display: none;
+  }
+
+  .mobile-menu__navigation {
+    position: absolute;
+    left: 0;
+    width: 278px;
+    height: 100%;
+    padding: 10px 10px;
+    background-color: #2d303a;
+    border-radius: 5px;
+    text-align: left;
+    word-break: break-all;
+  }
+
+  .header__accent {
+    margin: 0;
+    color: #f06c64;
+  }
+
+  .navigation__list {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 376px) {
@@ -659,26 +797,22 @@ ul {
     align-items: baseline;
     padding: 29px 20px 30px 20px;
   }
-  
-  .navigation {
-    display: none;
-  }
 
   .slider_content {
     padding: 20px 10px 21px 10px;
   }
 
   .slider_item {
-   justify-content: center;
-   max-width: 280px;
-   height: 218px;
+    justify-content: center;
+    max-width: 280px;
+    height: 218px;
   }
 
   .button_left {
     height: 26px;
     width: 15px;
   }
-  
+
   .button_right {
     height: 26px;
     width: 15px;
@@ -688,7 +822,6 @@ ul {
     height: 227px;
     width: 230px;
   }
-
 
   .portfolio_works {
     display: grid;
@@ -701,7 +834,7 @@ ul {
     gap: 20px;
   }
 
-    .copyright {
+  .copyright {
     font-size: 1.2rem;
     color: #767e9e;
     display: none;

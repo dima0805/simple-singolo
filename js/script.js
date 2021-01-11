@@ -1,4 +1,7 @@
 const MENU = document.querySelector(".navigation");
+const BODY = document.querySelector('body');
+const MOBILE_MENU = document.querySelector(".header__mobile-menu");
+const BURGER = document.getElementById('burger');
 const SLIDES = document.querySelectorAll(".slider_item");
 let SLIDE_NUM = 0;
 const SLIDER_WRAP = document.querySelector(".slider");
@@ -28,6 +31,10 @@ const BTN_PORTFOLIO_ART = document.querySelector(".tag_art");
 const PORTFOLIO_ITEMS = document.querySelectorAll(".portfolio-works_item");
 const PORTFOLIO_BLOCK = document.querySelector(".portfolio-works");
 
+
+
+//Реализуем активные пункты меню при перемещении по ним=============================================
+
 MENU.addEventListener("click", (event) => {
   MENU.querySelectorAll("li").forEach((el) => {
     el.querySelector("a").classList.remove("active");
@@ -35,6 +42,53 @@ MENU.addEventListener("click", (event) => {
   });
 });
 
+
+//Открываем меню бургер================================================================================
+
+BURGER.addEventListener('click', (e) => {
+  if (e.target.tagName === "DIV") {
+      if (e.target.classList[1] == 'header__burger-button_active') {
+          e.target.classList.remove('header__burger-button_active');
+          document.getElementById('mobile-menu').classList.add('header__mobile-menu_hidden');
+          BODY.classList.remove('scroll-hidden');
+      }
+      else {
+          e.target.classList.add('header__burger-button_active');
+          document.getElementById('mobile-menu').classList.remove('header__mobile-menu_hidden');
+          BODY.classList.add('scroll-hidden');
+      }
+  }
+
+  else {
+      if (e.target.parentElement.classList[1] == 'header__burger-button_active') {
+          e.target.parentElement.classList.remove('header__burger-button_active');
+          document.getElementById('mobile-menu').classList.add('header__mobile-menu_hidden');
+          BODY.classList.remove('scroll-hidden');
+      }
+      else {
+          e.target.parentElement.classList.add('header__burger-button_active');
+          document.getElementById('mobile-menu').classList.remove('header__mobile-menu_hidden');
+          BODY.classList.add('scroll-hidden');
+      }
+  }
+});
+
+
+
+function chooseItemMenuBurger(event) {
+  MOBILE_MENU.querySelectorAll('a').forEach(el =>
+      el.classList.remove('navigation__link-mobile_state_active'));
+
+  event.target.classList.add('navigation__link-mobile_state_active');
+  document.getElementById('mobile-menu').classList.add('header__mobile-menu_hidden');
+  BODY.classList.remove('scroll-hidden');
+}
+
+MOBILE_MENU.addEventListener('click', chooseItemMenuBurger);
+
+
+
+//Переключение слайдов=============================================================================== 
 BUTTON_LEFT.addEventListener("click", (event) => {
   SLIDES.forEach((el) => {
     el.style.display = "none";
@@ -92,6 +146,8 @@ PHONE_BUTTON_HORIZ.addEventListener("click", (event) => {
     SCREEN_STATUS_HOR = true;
   }
 });
+
+//Переключение табов=============================================================================== 
 
 BTN_PORTFOLIO_ALL.addEventListener("click", (event) => {
   TAGS.forEach((el) => {
